@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luggage</title>
+    <link rel="stylesheet" href="Luggage.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="data:image/png;base64,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"
+                alt="Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bags.html">Bags</a></li>
+                <li><a href="Mobile.html">Mobile</a></li>
+                <li><a href="CameraGear.html">Camera Gear</a></li>
+                <li><a href="#">Luggage</a></li>
+                <li><a href="sale.html">Sale</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-center">
+            <div class="search-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M14.385 15.446a6.751 6.751 0 1 1 1.06-1.06l5.156 5.155a.75.75 0 1 1-1.06 1.06zM6.46 13.884a5.25 5.25 0 1 1 7.43-.005l-.005.005l-.005.004a5.25 5.25 0 0 1-7.42-.004" clip-rule="evenodd"/></svg>
+                <input type="text" placeholder="Search for camera straps and other items" />
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <a href="#">Support</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3.75a3.75 3.75 0 1 0 0 7.5a3.75 3.75 0 0 0 0-7.5m-4 9.5A3.75 3.75 0 0 0 4.25 17v1.188c0 .754.546 1.396 1.29 1.517c4.278.699 8.642.699 12.92 0a1.54 1.54 0 0 0 1.29-1.517V17A3.75 3.75 0 0 0 16 13.25h-.34q-.28.001-.544.086l-.866.283a7.25 7.25 0 0 1-4.5 0l-.866-.283a1.8 1.8 0 0 0-.543-.086z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M19.148 5.25H5.335l-1.18-2.115A.75.75 0 0 0 3.5 2.75H2a.75.75 0 0 0 0 1.5h1.06l1.164 2.088L6.91 12.28l.003.006l.237.523l-2.697 2.877a.75.75 0 0 0 .462 1.258l2.458.281a40.7 40.7 0 0 0 9.254 0l2.458-.28a.75.75 0 0 0-.17-1.491l-2.458.28a39.3 39.3 0 0 1-8.914 0l-.975-.11l1.98-2.112l.053-.064l.752.098c1.055.138 2.122.165 3.182.08a9.3 9.3 0 0 0 6.366-3.268l.579-.685l.053-.072l1.078-1.642c.764-1.164-.071-2.71-1.463-2.71M6.5 18.5a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3M16 20a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0"/></svg>
+        </div>
+    </nav>
+
+    <section class="bags-section">
+    <div class="bags-header">
+      <h1>LUGGAGE</h1>
+      <div class="bags-nav">
+      </div>
+    </div>
+
+    <div class="bags-container">
+      <div class="bag-card">
+        <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/shotkit-peak-design-roller-17-landscape-59b6ddc152b8370a500adcf4d7201184-zybravgx2q47.jpg" alt="Everyday Bag">
+        <div class="bag-overlay">
+          <p>Travel Bags</p>
+          <button class="nav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M3 12h17.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M21 12l-7 7M21 12l-7 -7"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="12;0"/></path></g></svg></button>
+        </div>
+      </div>
+
+      <div class="bag-card">
+        <img src="https://ultimatepuravida.com/wp-content/uploads/2023/06/UPV-PD-Gear-2.jpg" alt="Travel Bag">
+        <div class="bag-overlay">
+          <p>Packing Cubes</p>
+          <button class="nav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M3 12h17.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M21 12l-7 7M21 12l-7 -7"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="12;0"/></path></g></svg></button>
+        </div>
+      </div>
+
+      <div class="bag-card">
+        <img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/11729273/Peak_Design_Packing_Cube_Lifestyle1.jpg?quality=90&strip=all&crop=0,0,100,100" alt="Outdoor Bag">
+        <div class="bag-overlay">
+          <p>Bag Accessories</p>
+        <button class="nav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M3 12h17.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M21 12l-7 7M21 12l-7 -7"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="12;0"/></path></g></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <section class="filter-bar">
+    <div class="filters-left">
+      <div class="filter-item">SIZE <i class="fas fa-chevron-down"></i></div>
+      <div class="filter-item">BAG TYPE <i class="fas fa-chevron-down"></i></div>
+      <div class="filter-item">USE CASE <i class="fas fa-chevron-down"></i></div>
+      <div class="filter-item">WHAT IT FITS <i class="fas fa-chevron-down"></i></div>
+      <div class="filter-item">COLORS <i class="fas fa-chevron-down"></i></div>
+      <div class="filter-item sale-toggle">
+        SALE 
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="filters-right">
+      <p class="item-count">113 items</p>
+      <div class="filter-sort">
+        FEATURED <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </section>
+
+ <section class="duffel-grid">
+
+    <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://fotocentreindia.com/wp-content/uploads/Peak-Design-Roller-Pro-Trolley-Bag-Black-Online-Buy-in-India_3.jpg" alt="Travel Duffel">
+      </div>
+      <div class="duffel-info">
+        <h3>Roller Pro Carry-On</h3>
+        <p>Black</p>
+        <span class="duffel-price">$599.95</span>
+      </div>
+    </div>
+
+       <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://pd-ima.imastudent.com/wp-content/uploads/2025/07/Peak-Design-Roller-Pro-6-600x600.png" alt="Travel Duffel">
+      </div>
+      <div class="duffel-info">
+        <h3>Roller Pro Carry-On</h3>
+        <p>Eclipse</p>
+        <span class="duffel-price">$569.95</span>
+      </div>
+    </div>
+
+    <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://pd-ima.imastudent.com/wp-content/uploads/2022/03/BTR-45-DS-3.png" alt="Travel Duffel">
+      </div>
+      <div class="duffel-info">
+        <h3>Travel Duffel</h3>
+        <p>65L | blue</p>
+        <span class="duffel-price">$179.95</span>
+      </div>
+    </div>
+
+    <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://fotocentreindia.com/wp-content/uploads/Peak-Design-Everyday-Tote-20L-V2-Black-Online-Buy-Mumbai-India_6.jpg" alt="Travel Duffel">
+      </div>
+      <div class="duffel-info">
+        <h3>Travel Duffel</h3>
+        <p>65L | black</p>
+        <span class="duffel-price">$279.95</span>
+      </div>
+    </div>
+
+  <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="data:image/jpeg;base64,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" alt="Travel Duffel">
+        <span class="duffel-badge">New</span>
+      </div>
+      <div class="duffel-info">
+        <h3>Item Duffel</h3>
+        <p>50L | Eclipse</p>
+        <span class="duffel-price">$189.95</span>
+      </div>
+    </div>
+
+    <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="data:image/jpeg;base64,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" alt="Travel Duffel">
+      </div>
+      <div class="duffel-info">
+        <h3>Travel Duffel</h3>
+        <p>50L | Sage</p>
+        <span class="duffel-price">$169.95</span>
+      </div>
+    </div>
+
+
+          <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://cdn.shopify.com/s/files/1/2986/1172/files/rollerpro-sage-159A1186_8aad9ec1-78f2-41f5-9849-296f1abf6003.jpg?v=1748643816" alt="Travel Duffel">
+      </div>
+      <div class="duffel-info">
+        <h3>Roller Pro Carry-On</h3>
+        <p>Sage</p>
+        <span class="duffel-price">$599.95</span>
+      </div>
+    </div>
+
+          <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://www.indexurban.com/cdn/shop/products/Duffel35-Black-HERO-sized-1-edit_1024x1024_0e401e9b-3269-47bf-8573-fd49baebe205.jpg?v=1651137410" alt="Travel Duffel">
+      </div>
+      <div class="duffel-info">
+        <h3>Travel Duffel</h3>
+        <p>Eclipse</p>
+        <span class="duffel-price">$342.44</span>
+      </div>
+    </div>
+
+       <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://cdn.shopify.com/s/files/1/2986/1172/files/10_BEDB-20-BK-2.jpg?v=1682534555" alt="Travel Duffel">
+      </div>
+      <div class="duffel-info">
+        <h3>Bag-Pack</h3>
+        <p>80L | Black</p>
+        <span class="duffel-price">$109.95</span>
+      </div>
+    </div>
+
+        <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://pixelsperfect.in/wp-content/uploads/2024/10/peak_design_everyday_backpack_v2_20l_coyote_1-500x500.jpg" alt="Travel Duffel">
+      </div>
+      <div class="duffel-info">
+        <h3>Travel Duffelpack</h3>
+        <p>80L | Eclipse</p>
+        <span class="duffel-price">$79.95</span>
+      </div>
+    </div>
+
+          <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://www.indexurban.com/cdn/shop/products/Duffel35-Sage-HERO-sized-1p-edit_1024x1024_f6d21fe2-8afd-4e2c-9a24-0c9a029b8220.jpg?v=1651137406" alt="Travel Duffel">
+      </div>
+      <div class="duffel-info">
+        <h3>Travel Duffel</h3>
+        <p>35L | Sage</p>
+        <span class="duffel-price">$345.56</span>
+      </div>
+    </div>
+
+          <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://cdn11.bigcommerce.com/s-78a3gbd1n9/images/stencil/1280x1280/products/49710/139546/peak-design-travel-duffel-coyote-35l__23591.1726057019.jpg?c=2" alt="Travel Duffel">
+      </div>
+      <div class="duffel-info">
+        <h3>Travel Duffel</h3>
+        <p>35L | Coyote</p>
+        <span class="duffel-price">$324.90</span>
+      </div>
+    </div>
+
+   
+  </section>
+
+     <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-column">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">Support Center</a></li>
+          <li><a href="#">Track Your Order</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Lifetime Warranty</a></li>
+          <li><a href="#">Product Registration</a></li>
+          <li><a href="#">Corporate Sales</a></li>
+          <li><a href="#">PD Expert Program</a></li>
+          <li><a href="#">Collaboration</a></li>
+          <li><a href="#">Military/Students</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>About</h3>
+        <ul>
+          <li><a href="#">Our Mission</a></li>
+          <li><a href="#">Impact Report</a></li>
+          <li><a href="#">Taking Action</a></li>
+          <li><a href="#">Find a Retailer</a></li>
+          <li><a href="#">Field Notes</a></li>
+          <li><a href="#">Ambassadors</a></li>
+          <li><a href="#">Films</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">#FindYourPeak</a></li>
+          <li><a href="#">Become a Dealer</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="#">Bags</a></li>
+          <li><a href="#">Bag Accessories</a></li>
+          <li><a href="#">Mobile</a></li>
+          <li><a href="#">Camera Gear</a></li>
+          <li><a href="#">Tripods</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column wide">
+        <div class="store-section">
+          <h3>Visit a PD Store</h3>
+          <p class="store-links">SF | LA | NY | TK | CZ</p>
+        </div>
+
+        <div class="newsletter">
+          <h3>Subscribe to Newsletter</h3>
+          <p>Be the first to know about new products, events, and sales.</p>
+          <div class="newsletter-input">
+            <input type="email" placeholder="Your email">
+            <button>SIGN ME UP</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M12.244 4c.534.003 1.87.016 3.29.073l.504.022c1.429.067 2.857.183 3.566.38c.945.266 1.687 1.04 1.938 2.022c.4 1.56.45 4.602.456 5.339l.001.152v.174c-.007.737-.057 3.78-.457 5.339c-.254.985-.997 1.76-1.938 2.022c-.709.197-2.137.313-3.566.38l-.504.023c-1.42.056-2.756.07-3.29.072l-.235.001h-.255c-1.13-.007-5.856-.058-7.36-.476c-.944-.266-1.687-1.04-1.938-2.022c-.4-1.56-.45-4.602-.456-5.339v-.326c.006-.737.056-3.78.456-5.339c.254-.985.997-1.76 1.939-2.021c1.503-.419 6.23-.47 7.36-.476zM9.999 8.5v7l6-3.5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="9" cy="9" r="1"/><circle cx="15" cy="15" r="1"/><path d="M8 9a7 7 0 0 0 7 7m-9 5.2A11 11 0 1 0 2.8 18L2 22Z"/></g></svg>
+      </div>
+      <p class="currency">Global (USD $)</p>
+    </div>
+  </footer>
+
+  </body>
+  </html>

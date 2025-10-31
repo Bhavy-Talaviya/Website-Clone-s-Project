@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile</title>
+    <link rel="stylesheet" href="Mobile.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="data:image/png;base64,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"
+                alt="Logo" class="logo">
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+                <li><a href="bags.html">Bags</a></li>
+                <li><a href="#">Mobile</a></li>
+                <li><a href="CameraGear.html">Camera Gear</a></li>
+                <li><a href="Luggage.html">Luggage</a></li>
+                <li><a href="sale.html">Sale</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-center">
+            <div class="search-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M14.385 15.446a6.751 6.751 0 1 1 1.06-1.06l5.156 5.155a.75.75 0 1 1-1.06 1.06zM6.46 13.884a5.25 5.25 0 1 1 7.43-.005l-.005.005l-.005.004a5.25 5.25 0 0 1-7.42-.004" clip-rule="evenodd"/></svg>
+                <input type="text" placeholder="Search for camera straps and other items" />
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <a href="#">Support</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3.75a3.75 3.75 0 1 0 0 7.5a3.75 3.75 0 0 0 0-7.5m-4 9.5A3.75 3.75 0 0 0 4.25 17v1.188c0 .754.546 1.396 1.29 1.517c4.278.699 8.642.699 12.92 0a1.54 1.54 0 0 0 1.29-1.517V17A3.75 3.75 0 0 0 16 13.25h-.34q-.28.001-.544.086l-.866.283a7.25 7.25 0 0 1-4.5 0l-.866-.283a1.8 1.8 0 0 0-.543-.086z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M19.148 5.25H5.335l-1.18-2.115A.75.75 0 0 0 3.5 2.75H2a.75.75 0 0 0 0 1.5h1.06l1.164 2.088L6.91 12.28l.003.006l.237.523l-2.697 2.877a.75.75 0 0 0 .462 1.258l2.458.281a40.7 40.7 0 0 0 9.254 0l2.458-.28a.75.75 0 0 0-.17-1.491l-2.458.28a39.3 39.3 0 0 1-8.914 0l-.975-.11l1.98-2.112l.053-.064l.752.098c1.055.138 2.122.165 3.182.08a9.3 9.3 0 0 0 6.366-3.268l.579-.685l.053-.072l1.078-1.642c.764-1.164-.071-2.71-1.463-2.71M6.5 18.5a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3M16 20a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0"/></svg>
+        </div>
+    </nav>
+
+    <section class="bags-section">
+    <div class="bags-header">
+      <h1>MOBILE</h1>
+      <div class="bags-nav">
+      </div>
+    </div>
+
+    <div class="bags-container">
+      <div class="bag-card">
+        <img src="https://cdn.packhacker.com/2022/09/f4c5558e-peak-design-mobile-tripod-tripod.jpg" alt="Everyday Bag">
+        <div class="bag-overlay">
+          <p>PHONE CASES</p>
+          <button class="nav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M3 12h17.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M21 12l-7 7M21 12l-7 -7"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="12;0"/></path></g></svg></button>
+        </div>
+      </div>
+
+      <div class="bag-card">
+        <img src="https://www.designinfo.in/wp-content/uploads/2025/07/Peak-Design-Mobile-GNAR-Maximal-Case-for-iPhone-16-Pro-Max-Black-1-1.webp" alt="Travel Bag">
+        <div class="bag-overlay">
+          <p>PHONE ACCESSORIES</p>
+          <button class="nav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M3 12h17.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M21 12l-7 7M21 12l-7 -7"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="12;0"/></path></g></svg></button>
+        </div>
+      </div>
+
+      <div class="bag-card">
+        <img src="https://cdn.mos.cms.futurecdn.net/TExjrvorS35SAY5gkKXnM3-1200-80.jpeg" alt="Outdoor Bag">
+        <div class="bag-overlay">
+          <p>PHONE MOUNTS</p>
+        <button class="nav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M3 12h17.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M21 12l-7 7M21 12l-7 -7"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="12;0"/></path></g></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <section class="filter-bar">
+    <div class="filters-left">
+      <div class="filter-item">SIZE <i class="fas fa-chevron-down"></i></div>
+      <div class="filter-item">Mobile TYPE <i class="fas fa-chevron-down"></i></div>
+      <div class="filter-item">USE CASE <i class="fas fa-chevron-down"></i></div>
+      <div class="filter-item">WHAT IT PERFECT <i class="fas fa-chevron-down"></i></div>
+      <div class="filter-item">COLORS <i class="fas fa-chevron-down"></i></div>
+      <div class="filter-item sale-toggle">
+        SALE 
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="filters-right">
+      <p class="item-count">113 items</p>
+      <div class="filter-sort">
+        FEATURED <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </section>
+
+ <section class="duffel-grid">
+
+    <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://www.designinfo.in/wp-content/uploads/2024/10/Peak-Design-Mobile-Everyday-Fabric-Case-for-iPhone-16-Sage-2-485x485-optimized.webp" alt="Travel Duffel">
+        <span class="duffel-badge">New</span>
+      </div>
+      <div class="duffel-info">
+        <h3>GNAR Case for iPhone</h3>
+        <span class="duffel-price">$39.95</span>
+        <p>IN 3 COLOUR</p>
+      </div>
+    </div>
+
+    <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGIAFn6d83gLjIQq3lLioo_Ug-APLVmqyvoA&s" alt="Travel Duffel">
+      </div>
+      <div class="duffel-info">
+          <h3>Mobile Tripod</h3>
+        <span class="duffel-price">$79.95</span>
+        <p>Silver Color</p>
+      </div>
+    </div>
+
+       <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://gaffarbhaiandsons.com/wp-content/uploads/2022/06/PD_Mobile_Tripod_5.png" alt="Travel Duffel">
+      </div>
+      <div class="duffel-info">
+        <h3>Mobile Tripod</h3>
+        <span class="duffel-price">$69.15</span>
+        <p>Black Color</p>
+      </div>
+    </div>
+
+        <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://www.kphoto.com.tw/image/catalog/Product/AFD/AFDM007CB.jpg" alt="Travel Duffel">
+      </div>
+      <div class="duffel-info">
+        <h3>Universal Bar Mount With Pin</h3>
+        <span class="duffel-price">$54.55</span>
+        <p>Black Color</p>
+      </div>
+    </div>
+
+        <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://singerphoto.co.za/media/catalog/product/cache/e917d85179a98166a759db41eac70130/c/s/cspdm-mm-ae-bk-1_a.jpg" alt="Travel Duffel">
+      </div>
+      <div class="duffel-info">
+        <h3>Universal Bar Mount</h3>
+        <span class="duffel-price">$49.95</span>
+        <p>Black Color</p>
+      </div>
+    </div>
+
+        <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvBSwSohA6ozXZv8X3DZlWAWfXn2SrF5Ifmw&s" alt="Travel Duffel">
+      </div>
+      <div class="duffel-info">
+        <h3>GNAR Case for iPhone</h3>
+        <span class="duffel-price">$59.00</span>
+        <p>IN 7 COLOUR</p>
+      </div>
+    </div>
+
+         <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://cdn.shopify.com/s/files/1/2986/1172/files/mobile-moto-barv2-l-studio1_f9b6f80c-dc14-454c-b3b6-f85c0b947804.jpg?v=1727136864" alt="Travel Duffel">
+      </div>
+      <div class="duffel-info">
+        <h3>Motorcycle Bar Mount</h3>
+        <span class="duffel-price">$84.96</span>
+        <p>Locking</p>
+      </div>
+    </div>
+
+        <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://m.media-amazon.com/images/I/61nLEoiPAiL.jpg" alt="Travel Duffel">
+        <span class="duffel-badge">New</span>
+      </div>
+      <div class="duffel-info">
+        <h3>Ball Mount Adapter</h3>
+        <span class="duffel-price">$89.95</span>
+        <p>Qi1 Charging | Non-Locking</p>
+      </div>
+    </div>
+
+        <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://bumsonthesaddle.com/cdn/shop/files/peak-design-slim-mobile-wallet-midnight-bumsonthesaddle-1.jpg?v=1719802805" alt="Travel Duffel">
+        <span class="duffel-badge">New</span>
+      </div>
+      <div class="duffel-info">
+        <h3>Smartphone Slim Wallet(Midnibht)</h3>
+        <span class="duffel-price">$39.95</span>
+        <p>Charcoal</p>
+      </div>
+    </div>
+
+        <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRiCDneEUaqiIFm_XZlxrh25DfonfaBdjfNwjenjEcUgz95fEimG6cS96uAsKTxygh-RY&usqp=CAU" alt="Travel Duffel">
+        <span class="duffel-badge">New</span>
+      </div>
+      <div class="duffel-info">
+        <h3>Smartphone Slim Wallet</h3>
+        <span class="duffel-price">$59.95</span>
+        <p>Saga | With Stand</p>
+      </div>
+    </div>
+
+        <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://cdn.shopify.com/s/files/1/2986/1172/files/standwallet-eclipse-phone2_9f553493-c030-496e-bb4f-208e741ddba1.jpg?v=1727716100" alt="Travel Duffel">
+        <span class="duffel-badge">New</span>
+      </div>
+      <div class="duffel-info">
+        <h3>Smartphone Wallet</h3>
+        <span class="duffel-price">$44.95</span>
+        <p>RedWood | With Stand</p>
+      </div>
+    </div>
+
+          <div class="duffel-card">
+      <div class="duffel-img">
+        <img src="https://cdn.shopify.com/s/files/1/2986/1172/files/PeakDesign_iPhone15Pro_Stand-Wallet_Sun-Sun-v2.jpg?v=1727716077&width=1500&height=1500&crop=center" alt="Travel Duffel">
+        <span class="duffel-badge">New</span>
+      </div>
+      <div class="duffel-info">
+        <h3>Smartphone Wallet</h3>
+        <span class="duffel-price">$59.95</span>
+        <p>Sun | With Stand</p>
+      </div>
+    </div>
+  </section>
+
+     <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-column">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">Support Center</a></li>
+          <li><a href="#">Track Your Order</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Lifetime Warranty</a></li>
+          <li><a href="#">Product Registration</a></li>
+          <li><a href="#">Corporate Sales</a></li>
+          <li><a href="#">PD Expert Program</a></li>
+          <li><a href="#">Collaboration</a></li>
+          <li><a href="#">Military/Students</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>About</h3>
+        <ul>
+          <li><a href="#">Our Mission</a></li>
+          <li><a href="#">Impact Report</a></li>
+          <li><a href="#">Taking Action</a></li>
+          <li><a href="#">Find a Retailer</a></li>
+          <li><a href="#">Field Notes</a></li>
+          <li><a href="#">Ambassadors</a></li>
+          <li><a href="#">Films</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">#FindYourPeak</a></li>
+          <li><a href="#">Become a Dealer</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="#">Bags</a></li>
+          <li><a href="#">Bag Accessories</a></li>
+          <li><a href="#">Mobile</a></li>
+          <li><a href="#">Camera Gear</a></li>
+          <li><a href="#">Tripods</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column wide">
+        <div class="store-section">
+          <h3>Visit a PD Store</h3>
+          <p class="store-links">SF | LA | NY | TK | CZ</p>
+        </div>
+
+        <div class="newsletter">
+          <h3>Subscribe to Newsletter</h3>
+          <p>Be the first to know about new products, events, and sales.</p>
+          <div class="newsletter-input">
+            <input type="email" placeholder="Your email">
+            <button>SIGN ME UP</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="currentColor" d="M12.244 4c.534.003 1.87.016 3.29.073l.504.022c1.429.067 2.857.183 3.566.38c.945.266 1.687 1.04 1.938 2.022c.4 1.56.45 4.602.456 5.339l.001.152v.174c-.007.737-.057 3.78-.457 5.339c-.254.985-.997 1.76-1.938 2.022c-.709.197-2.137.313-3.566.38l-.504.023c-1.42.056-2.756.07-3.29.072l-.235.001h-.255c-1.13-.007-5.856-.058-7.36-.476c-.944-.266-1.687-1.04-1.938-2.022c-.4-1.56-.45-4.602-.456-5.339v-.326c.006-.737.056-3.78.456-5.339c.254-.985.997-1.76 1.939-2.021c1.503-.419 6.23-.47 7.36-.476zM9.999 8.5v7l6-3.5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="9" cy="9" r="1"/><circle cx="15" cy="15" r="1"/><path d="M8 9a7 7 0 0 0 7 7m-9 5.2A11 11 0 1 0 2.8 18L2 22Z"/></g></svg>
+      </div>
+      <p class="currency">Global (USD $)</p>
+    </div>
+  </footer>
+
+  </body>
+  </html>
