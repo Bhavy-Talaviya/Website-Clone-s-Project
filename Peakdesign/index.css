@@ -22,6 +22,7 @@ body {
   align-items: center;
   gap: 50px;
 }
+
 .nav-left  li a {
   text-decoration: none;
   color: #111;
@@ -425,7 +426,6 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 70vh;
-  padding: 20px;
   background-color: #000;
 }
 
@@ -939,10 +939,6 @@ body {
     padding: 15px 20px;
   }
 
-  .nav-left, .nav-right {
-    display: none;
-  }
-
   .nav-center {
     width: 100%;
   }
@@ -1062,11 +1058,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
     padding: 12px 15px;
-  }
-
-  .nav-left,
-  .nav-right {
-    display: none;
   }
 
   .search-box {
