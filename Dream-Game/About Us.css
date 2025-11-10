@@ -38,7 +38,7 @@ body {
 }
 .container{
     height: 488px;
-    background-image: url(/IMG_Folder/About.png);
+    background-image: url(./IMG_Folder/About.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -69,9 +69,8 @@ body {
 .games-section {
     width: 100%;
     background-color: #f5f5f7;
-    
-   
     padding: 40px 20px 40px 20px;
+    justify-items: center;
 }
 
 .games-container {

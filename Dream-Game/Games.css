@@ -40,7 +40,7 @@ body {
 }
 .container{
     height: 488px;
-    background-image: url(/IMG_Folder/Game.png);
+    background-image: url(./IMG_Folder/Game.png);
     background-size: cover;
     background-position: center;
     display: flex;

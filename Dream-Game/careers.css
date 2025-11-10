@@ -39,7 +39,7 @@ body {
 
 .container{
     height: 488px;
-    background-image: url(/IMG_Folder/Careers.png);
+    background-image: url(./IMG_Folder/Careers.png);
     background-size: cover;
     background-position: center;
     display: flex;
