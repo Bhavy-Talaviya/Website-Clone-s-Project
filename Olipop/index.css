@@ -1,0 +1,983 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+     background-color: #fff8e6;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    background-color: #fff8e6;
+    height: 8vh;
+  }
+
+  .nav-left,
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #0e4634;
+    font-weight: 550;
+    font-size: 2.4vh;
+  }
+
+  .nav-center img {
+    height: 45px;
+    display: block;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    fill: #0e4634;
+    cursor: pointer;
+  }
+
+   .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:86vh;
+    background-color: #eaf6f6;
+    background-image: url('https://drinkolipop.com/cdn/shop/files/D-Home_holiday.webp?v=1762195432');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    padding: 0 10%;
+  }
+
+  .hero-text {
+    color: #0e4634;
+  }
+
+  .heading1{
+    font-size: 3.9rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 0vh;
+  }
+
+  .hero-text p {
+    max-width: 48%;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-bottom: 30px;
+     font-family: Poppins , sans-serif;
+     font-weight: 100;
+  }
+
+  .hero-text .btn {
+    background-color: #ff3b5c;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 40px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 0vh;
+  }
+
+  .hero-text .btn:hover {
+    background-color: #e03151;
+  }
+
+  
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.left img {
+  width: 450px;
+  border-radius: 50%;
+  margin-top: 10vh;
+  margin-left: 20vh
+}
+
+.right {
+  max-width: 600px;
+  margin-top: 15vh;
+  margin-right: 5vh;
+}
+
+.small-text {
+  color: #184e3a;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-left: 20vh;
+}
+
+.heading2{
+  font-size: 56px;
+  color: #184e3a;
+  line-height: 1.1;
+  font-weight: 900;
+  margin-bottom: 20px;
+  margin-left: 20vh;
+}
+
+.description {
+  color: #184e3a;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 16px;
+  margin-left: 20vh;
+}
+
+.button{
+  background-color: #f33b50;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 18px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-left: 20vh;
+}
+
+.button:hover {
+  background-color: #d92c41;
+}
+
+.flavors h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  margin-top: 9vh;
+  margin-left: 32%;
+}
+
+.flavors p {
+  font-size: 19px;
+  color: #375547;
+  margin-bottom: 40px;
+    margin-left: 35%;
+}
+
+.card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 33px;
+    }
+
+    .card {
+      width: 310px;
+      height: 310px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .top-section {
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .product-img {
+      width: 220px;
+      height: auto;
+    }
+
+    .bottom-section {
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .bottom-section h2 {
+      color: #1f3b1f;
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .bottom-section p {
+      color: #2f5f2f;
+      font-size: 0.9rem;
+      margin-bottom: 18px;
+      margin-left: 1%;
+    }
+
+    button {
+      background-color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 8px 20px;
+      color: #1f3b1f;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e6f9d8;
+    }
+
+    /* 🎨 Card Colors */
+    .green   { background: linear-gradient(to bottom, #9de663 50%, #b8f79e 50%); }
+    .orange  { background: linear-gradient(to bottom, #fdbb5a 50%, #ffd98b 50%); }
+    .pink    { background: linear-gradient(to bottom, #f78db3 50%, #f9bcd0 50%); }
+    .blue    { background: linear-gradient(to bottom, #7ad0f8 50%, #b5e6fa 50%); }
+
+    .flavor-btn {
+      background-color: #11443f;
+      color: #f8e9c0; 
+      border: none;
+      border-radius: 30px;
+      padding: 12px 30px;
+      font-size: 19px;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: "Poppins", sans-serif;
+      transition: all 0.3s ease;
+      display: inline-block;
+      margin-top: 3%;
+      margin-left: 42%;
+    }
+
+    .flavor-btn:hover {
+      background-color: #0d3834;
+      transform: scale(1.05);
+    }
+
+  .offer-banner {
+     background-image: url('https://drinkolipop.com/cdn/shop/files/HP-subscribe-and-save_1203x.webp?v=1732111349'); 
+     background-repeat: no-repeat;
+     background-position: right center;
+     background-size: contain;
+     height: 80vh;
+     display: flex;
+     align-items: center;
+     padding: 80px;
+     background-color: rgb(251, 222, 192);
+     margin-top: 4%;
+   }
+   
+   .offer-content {
+     max-width: 600px;
+     color: #0a3a2d;
+     margin-left: 4%;
+     margin-top: 4%;
+   }
+   
+   .offer-title {
+     font-size: 3.4rem;
+     font-weight: 1000;
+     line-height: 1.2;
+     margin-bottom: 20px;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   
+   .offer-text {
+     font-size: 1.2rem;
+     line-height: 1.6;
+     margin-bottom: 40px;
+   }
+   
+   .feature-list {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 27px;
+     margin-bottom: 40px;
+   }
+   
+   .feature-item {
+     text-align: center;
+     width: 120px;
+   }
+   
+   .feature-icon {
+     width: 50px;
+     height: 50px;
+     margin-bottom: 10px;
+   }
+   
+   .feature-desc {
+     font-size: 0.9rem;
+     color: #0a3a2d;
+   }
+   
+   .subscribe-btn {
+     background-color: #0e3b2d;
+     color: #fff;
+     padding: 15px 35px;
+     border: none;
+     border-radius: 40px;
+     font-size: 1.1rem;
+     cursor: pointer;
+     transition: background 0.3s ease;
+   }
+   
+   .subscribe-btn:hover {
+     background-color: #136048;
+   }
+
+   .press-section {
+  background: url('https://drinkolipop.com/cdn/shop/files/HP-publication-slider_1944x.webp?v=1732111359') no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.press-overlay {
+  background: rgba(0, 0, 0, 0.4); 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.press-content {
+  color: #fff;
+  padding: 20px;
+}
+
+.press-subtitle {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.press-quote {
+  font-family: "Georgia", serif;
+  font-size: 2.7rem;
+  line-height: 1.4;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.press-logos {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.press-logo {
+  font-size: 1.3rem;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.press-logo:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+.press-logo.active {
+  font-weight: 700;
+  opacity: 1;
+  position: relative;
+}
+
+.press-logo.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  margin: auto;
+  width: 60%;
+  height: 2px;
+  background: #fff;
+}
+
+
+.digest-section {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #ebebeb;
+  height: 88vh;
+}
+
+.digest-header {
+  margin-bottom: 60px;
+}
+
+.digest-title {
+  font-size: 2.9rem;
+  color: #083b2d;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.digest-subtext {
+  color: #406152;
+  font-size: 1.3rem;
+}
+
+.digest-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.digest-card {
+  position: relative;
+  width: 450px;
+  height: 280px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.3s ease;
+}
+
+.digest-card:hover {
+  transform: scale(1.02);
+}
+
+.card-one {
+  background-image: url('https://drinkolipop.com/cdn/shop/articles/11_Gangs_All_Here_All_Skus_0175_F3_V3_9x16_f007fb07-e0d1-4c7f-a020-4b644c923813_360x.jpg?v=1761578746');
+}
+
+.card-two {
+  background-image: url('https://drinkolipop.com/cdn/shop/articles/Human_Clinical_Trail_Hero_Image_2_ee0b8458-2925-4763-9cad-10027bbf4e94_360x.png?v=1749740524');
+}
+
+.card-info {
+  padding: 25px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+  text-align: left;
+}
+
+.read-time {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+.digest-button {
+  text-align: center;
+}
+
+.view-btn {
+  background-color: #0e3b2d;
+  color: #fff;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 40px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #135d46;
+}
+
+.footer {
+  background-color: #0e3b2d;
+  padding: 80px 60px 40px;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.footer-column h4 {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #cfded8;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #f2c94c;
+}
+
+.footer-subscribe {
+  max-width: 350px;
+  color: #fff;
+}
+
+.footer-subscribe p {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.subscribe-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.subscribe-box input {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 30px 0 0 30px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.subscribe-box button {
+  background-color: #f2c94c;
+  color: #083b2d;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 0 30px 30px 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.subscribe-box button:hover {
+  background-color: #e5b800;
+}
+
+/* ===== Social Icons ===== */
+.footer-social a {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #f2c94c;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin-top: 50px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #cfded8;
+}
+
+.footer-bottom-links a {
+  margin-left: 25px;
+  color: #cfded8;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #f2c94c;
+}
+
+
+/* --- Large tablets and small laptops (≤1200px) --- */
+@media (max-width: 1200px) {
+  nav {
+    padding: 15px 40px;
+  }
+
+  .hero {
+    padding: 0 6%;
+    background-size: cover;
+  }
+
+  .hero-text p {
+    max-width: 70%;
+  }
+
+  .left img {
+    width: 350px;
+    margin-left: 10vh;
+  }
+
+  .heading2 {
+    font-size: 46px;
+  }
+
+  .flavors h1 {
+    font-size: 2.5rem;
+    margin-left: 25%;
+  }
+
+  .flavors p {
+    margin-left: 28%;
+  }
+
+  .offer-content {
+    max-width: 500px;
+  }
+
+  .offer-title {
+    font-size: 2.5rem;
+  }
+
+  .digest-card {
+    width: 370px;
+  }
+}
+
+/* --- Tablets (≤992px) --- */
+@media (max-width: 992px) {
+  nav {
+    padding: 10px 30px;
+    flex-wrap: wrap;
+  }
+
+  .nav-left, .nav-right {
+    gap: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    background-position: center;
+    height: auto;
+    padding: 60px 5%;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text p {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .heading1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-text .btn {
+    padding: 10px 30px;
+    font-size: 1.1rem;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left img {
+    margin: 5vh 0;
+    width: 300px;
+  }
+
+  .right {
+    margin: 0;
+    padding: 0 5%;
+  }
+
+  .small-text, .heading2, .description, .button {
+    margin-left: 0;
+  }
+
+  .heading2 {
+    font-size: 2.3rem;
+  }
+
+  .flavors h1 {
+    font-size: 2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .flavors p {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .flavor-btn {
+    margin-left: 0;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .offer-banner {
+    flex-direction: column;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .offer-content {
+    margin: 0;
+  }
+
+  .offer-title {
+    font-size: 2.3rem;
+  }
+
+  .feature-list {
+    justify-content: center;
+  }
+
+  .press-section {
+    height: 70vh;
+  }
+
+  .press-quote {
+    font-size: 2rem;
+  }
+
+  .digest-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .digest-card {
+    width: 90%;
+    height: 240px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    gap: 30px;
+  }
+
+  .footer-subscribe {
+    max-width: 100%;
+  }
+}
+
+/* --- Mobile landscape and small tablets (≤768px) --- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+    height: auto;
+  }
+
+  .nav-left, .nav-right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero {
+    background-image: none;
+    height: auto;
+    text-align: center;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .heading1 {
+    font-size: 2.2rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 85%;
+    height: auto;
+  }
+
+  .offer-banner {
+    background-image: none;
+    background-color: #fbe2c0;
+    height: auto;
+  }
+
+  .offer-content {
+    text-align: center;
+  }
+
+  .press-section {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .press-quote {
+    font-size: 1.8rem;
+  }
+
+  .digest-section {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .digest-title {
+    font-size: 2rem;
+  }
+
+  .footer {
+    padding: 50px 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom-links a {
+    margin: 10px;
+  }
+}
+
+/* --- Small mobile (≤480px) --- */
+@media (max-width: 480px) {
+  nav {
+    padding: 10px 15px;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .heading1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .left img {
+    width: 250px;
+  }
+
+  .heading2 {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+
+  .flavors h1 {
+    font-size: 1.6rem;
+  }
+
+  .flavors p {
+    font-size: 1rem;
+  }
+
+  .flavor-btn {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+
+  .offer-title {
+    font-size: 1.8rem;
+  }
+
+  .offer-text {
+    font-size: 1rem;
+  }
+
+  .feature-item {
+    width: 100px;
+  }
+
+  .digest-title {
+    font-size: 1.8rem;
+  }
+
+  .digest-card {
+    height: 200px;
+  }
+
+  .view-btn {
+    font-size: 1rem;
+    padding: 10px 30px;
+  }
+
+  .footer-column h4 {
+    font-size: 1rem;
+  }
+
+  .footer-column ul li a {
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+}
