@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: rgba(211, 211, 211, 0.527);
+    color: #333;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
+    background: rgba(128, 0, 128, 0.444);
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    color: #6b1ebf;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.cta-btn {
+    background: #6b1ebf;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.hero-img img {
+    width: 340px;
+}
+
+/* FEATURES SECTION */
+.features {
+    text-align: center;
+    padding: 60px 8%;
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.feature-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 290px;
+    padding: 25px;
+    border-radius: 15px;
+    background: #fafafa;
+    box-shadow: 0 0 10px rgba(0,0,0,0.07);
+    text-align: center;
+}
+
+.box img {
+    width: 190px;
+    margin-bottom: 15px;
+}
+
+/* CLASSES SECTION */
+.classes {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.classes h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.class-card {
+    background: #f5f5f5;
+    padding: 25px;
+    margin: 15px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.08);
+}
+
+.class-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.class-card button {
+    margin-top: 10px;
+    padding: 10px 25px;
+    background: #6b1ebf;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+footer img{
+    z-index: 1008;
+    width: 100%;
+}
+
+footer .india-course{
+    background: #813588;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+    padding-left: 3rem;
+    padding-right: 1rem;
+    padding-bottom: 20px;
+}
+
+footer .india-course .course, .exams-classes, .exam-resources, .company-follow, .free-textbook-solution, .state-boards{
+    display: inline-grid;
+    width: 17%;
+    min-height: 1px;
+}
+
+footer .india-course .course p, .exams-classes p, .exam-resources p, .company-follow p, .free-textbook-solution p, .state-boards p{
+    color: #ffc846;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer .india-course .course a, .exams-classes a, .exam-resources a, .company-follow a, .free-textbook-solution a, .state-boards a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+footer .india-course .course a:hover, .exams-classes a:hover, .exam-resources a:hover, .company-follow a:hover, .free-textbook-solution a:hover, .state-boards a:hover{
+    font-weight: 500;
+}
+
+footer .india-course .company-follow .follow{
+    display: flex;
+}
+
+footer .india-course .company-follow .follow img{
+    width: 30px;
+}
+footer hr{
+    height: 1px;
+    background: rgba(179, 179, 179, 0.582);
+    border: none;
+    width: 93%;
+    margin-left: 45px;
+}
+
+footer .bottom{
+    background: #813588;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 3rem;
+    font-size: 13px;
+}
+
+footer .bottom .pages a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .bottom .pages ion-icon{
+    transform: rotate(90deg);
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+
+footer .bottom .copyright{
+    margin-top: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .hero-content {
+        margin-bottom: 30px;
+    }
+
+    .class-card {
+        width: 90%;
+    }
+
+     /* FOOTER */
+    footer .india-course {
+        flex-direction: column;
+    }
+
+    footer .india-course .course,
+    footer .india-course .exams-classes,
+    footer .india-course .exam-resources,
+    footer .india-course .company-follow,
+    footer .india-course .free-textbook-solution,
+    footer .india-course .state-boards {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    footer hr {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    footer .bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+
